@@ -1,0 +1,17 @@
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
