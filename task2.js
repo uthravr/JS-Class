@@ -101,4 +101,3 @@ if (attendance.toLowerCase() === "yes" && CompletedTask.toLowerCase() === "yes")
 } else {
     console.log(employeeName + " is absent.");
 }
-console.clear();
