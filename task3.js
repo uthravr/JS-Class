@@ -118,23 +118,6 @@ if (distance <= 5) {
 console.log("Total Fare: $" + fare);
 
 //Task 10: Mini Employee Management System (Real Company Task) Requirements
-// Create an array of employees:
-// [
-//  {id:1,name:"Rahul",salary:25000},
-//  {id:2,name:"Kiran",salary:30000},
-//  {id:3,name:"Navi",salary:40000}
-// ]
-// Perform:
-// Print all employees
-// Find employee with highest salary
-// Find employee with lowest salary
-// Count total employees
-// Calculate total salary expenditure
-// Concepts
-// Array
-// Object
-// Loop
-// Condition
 let employees = [
     {id:1,name:"Rahul",salary:25000},
     {id:2,name:"Kiran",salary:30000},
