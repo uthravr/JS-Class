@@ -3,16 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS</title>
+    <title>Mini Fake Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <script src="./task1.js"></script> -->
-    <!-- <script src="./task2.js"></script> -->
-    <!-- <script src="./task3.js"></script> -->
-    <!-- <script src="./task4.js"></script> -->
-    <!-- <script src="./task5.js"></script> -->
-    <!-- <script src="./task6.js"></script> -->
-    <!-- <script src="./task7.js"></script> -->
-    <script src="./task8.js"></script>
+    <header class="topbar">
+        <div class="brand">Mini Fake Store</div>
+        <div class="controls">
+            <input id="search" type="search" placeholder="Search products...">
+            <select id="category">
+                <option value="all">All categories</option>
+            </select>
+            <button id="cart-toggle" class="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="products-grid" aria-live="polite"></section>
+    </main>
+
+    <aside id="cart-panel" class="cart-panel" aria-hidden="true">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart">Close</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div>Total: $<span id="cart-total">0.00</span></div>
+            <button id="checkout" class="primary">Checkout</button>
+        </div>
+    </aside>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js" defer></script>
 </body>
 </html>
